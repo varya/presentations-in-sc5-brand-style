@@ -15,7 +15,7 @@
 {% for item in items %}
     {% capture h1_attrs %}{{ item | split:'>' | first }}{% endcapture %}
     {% if flag != false %}
-        {% capture showerify_middle %}<section{{ h1_attrs | replace_first:'class="','class="slide ' }}{% unless h1_attrs contains 'class' %} class="slide"{% endunless %}><div><h2{% endcapture %}
+        {% capture showerify_middle %}<section{{ h1_attrs | replace_first:'class="','class="slide ' }}{% unless h1_attrs contains 'class' %} class="slide"{% endunless %}><h2{% endcapture %}
         {% assign slides = item | remove_first:h1_attrs | replace_first:'</h1>','</h2>' | split: '<h2' %}
 
         {% assign flag = false %}
@@ -33,8 +33,8 @@
                 {% capture showerify_middle %}{{ showerify_middle }}{{ slide }}{% endcapture %}
                 {% assign flag = true %}
             {% else %}
-                {% capture showerify_middle %}{{ showerify_middle }}</div></section>
-<section class="slide{{ slide_extra_class }}"{{ slide_attrs }}><div><h2{% endcapture %}
+                {% capture showerify_middle %}{{ showerify_middle }}</section>
+<section class="slide{{ slide_extra_class }}"{{ slide_attrs }}><h2{% endcapture %}
                 {% assign newslide = slide | remove_first:slide_attrs %}
                 {% if slide_extra_class %}
                     {% assign newslide = newslide | replace_first:'><strong>','>' %}
@@ -43,7 +43,7 @@
                 {% capture showerify_middle %}{{ showerify_middle }}{{ newslide }}{% endcapture %}
             {% endif %}
         {% endfor %}
-        {% capture showerify_middle %}{{ showerify_middle }}</div></section>{% endcapture %}
+        {% capture showerify_middle %}{{ showerify_middle }}</section>{% endcapture %}
     {% else %}
         {% assign flag = true %}
     {% endif %}
