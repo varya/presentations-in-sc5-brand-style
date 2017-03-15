@@ -62,6 +62,25 @@ Why we in our industry do presentations
 ## Kinds of slides
 {: .slide--shout .slide--red }
 
+## Blank slide
+
+## Plain text
+
+Design strategy is a management tool to deliver world class user interfaces and enable excellent user experience. In the
+future, UX aspects will become naturally considered as a part of product strategy. Before this happens, it seems
+necessary to manage UX strategy specifically. This post reveals the secret weapon SC5 uses in designing strategy.
+
+Spoiler: no weapon, we are just awesome.
+{: .note }
+
+## Inline elements
+
+Essential part of the [design leadership]() practice are the tools and methods deployed by the leaders. The details of
+**strategy, vision and roadmap** documents all depend on the domain of business. Style and brand guides intersect design
+with marketing. In business-to-consumer business, interesting challenge is the increasing number of channels or
+touchpoints in which customers *engage with the company*. Without a coherent approach under design leadership, everything
+can <code>fall apart</code>.
+
 ## Icons
 
 ## Presentation in markdown
