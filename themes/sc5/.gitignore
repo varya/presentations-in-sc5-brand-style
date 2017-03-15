@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+bower_components
+.sass-cache
+styles/*.map
+.publish
+dist/
+shower.min.js

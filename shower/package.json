@@ -1,0 +1,81 @@
+{
+  "name": "shower-core",
+  "description": "Core for Shower HTML presentation engine",
+  "version": "2.1.0",
+  "author": {
+    "name": "Vadim Makeev",
+    "url": "http://pepelsbey.net/"
+  },
+  "maintainers": [
+    {
+      "name": "Denis Hananein",
+      "email": "i@zloylos.me",
+      "github-username": "zloylos",
+      "role": "General architecture"
+    },
+    {
+      "name": "Vadim Makeev",
+      "email": "pepelsbey@gmail.com",
+      "github-username": "pepelsbey",
+      "role": "Author, idea, tests"
+    }
+  ],
+  "homepage": "https://github.com/shower/core",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shower/core.git"
+  },
+  "bugs": {
+    "url": "http://github.com/shower/shower/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "shower",
+    "presentation",
+    "core"
+  ],
+  "main": "shower.min.js",
+  "files": [
+    "shower.min.js",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-dom": "^1.4.3",
+    "chromedriver": "^2.27.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-insert": "^0.5.0",
+    "gulp-lintspaces": "^0.5.0",
+    "gulp-mocha-phantomjs": "^0.12.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "lint-staged": "^3.3.0",
+    "lintspaces-cli": "^0.6.0",
+    "mocha": "^3.0.2",
+    "nightwatch": "^0.9.12",
+    "pre-commit": "^1.2.2",
+    "shower-next": "0.0.6",
+    "shower-progress": "0.0.9",
+    "shower-timer": "0.0.12",
+    "shower-touch": "0.0.11",
+    "ym": "^0.1.2"
+  },
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "prepublish": "gulp build",
+    "build": "gulp build",
+    "lint": "gulp lint",
+    "test": "gulp unit && nightwatch"
+  },
+  "pre-commit": "lint-staged",
+  "lint-staged": {
+    "lib/**/*.js": ["eslint --fix", "git add"],
+    "*": "lintspaces -e .editorconfig -i js-comments"
+  }
+}

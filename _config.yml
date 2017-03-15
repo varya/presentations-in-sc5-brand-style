@@ -1,0 +1,21 @@
+safe: true
+markdown: kramdown
+highlighter: pygments
+permalink: /:title.html
+relative_permalinks: false
+
+default_theme: sc5
+default_width: 792
+default_lang: en
+default_body_class: shower list
+
+author:
+    name: Yours Truly
+    # url:  http://example.com/
+    company:
+        name: Famous Inc.
+        # url:  http://example.com/
+
+fork_url: https://github.com/shower/shower
+progress: true
+line_numbers: true
