@@ -1,3 +1,7 @@
+# Server Config options
+livereload: true     # You no longer need to include --livereload
+reload_port: 5678    # If you don't want to use the default port
+
 safe: true
 markdown: kramdown
 highlighter: pygments
@@ -10,12 +14,11 @@ default_lang: en
 default_body_class: shower list
 
 author:
-    name: Yours Truly
-    # url:  http://example.com/
+    name: Varya Stepanova
+    url:  http://varya.me/
     company:
-        name: Famous Inc.
-        # url:  http://example.com/
+        name: SC5 Online
+        url:  http://sc5.io
 
-fork_url: https://github.com/shower/shower
+fork_url: https://github.com/varya/presentations-in-sc5-brand-style
 progress: true
-line_numbers: true
