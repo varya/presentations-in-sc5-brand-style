@@ -395,15 +395,10 @@ see that it was just a matter of time for a better, more suitable solution to ar
 ## Hidden list
 
 
-<ol>
-<li class="next">Mix dry ingredients thoroughly.</li>
-
-<li class="next">Pour in wet ingredients.</li>
-
-<li class="next">Mix for 10 minutes.</li>
-
-<li class="next">Bake for one hour at 300 degrees.</li>
-</ol>
+* Mix dry ingredients thoroughly.
+* {:.next}Pour in wet ingredients
+* {:.next}Mix for 10 minutes.
+* {:.next}Bake for one hour at 300 degrees.
 
 
 ## Two columns
