@@ -49,7 +49,7 @@ Sometimes we need to make a developer's presentation
 ## My own experience
 
 * <s>Keynote</s>
-* 3 years of HTML preentations
+* 3 years of HTML presentations
 
 
 ## Shower
